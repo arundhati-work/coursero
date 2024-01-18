@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/coursero/static/css/main.f855e6bc.css",
+    "main.js": "/coursero/static/js/main.42848ff2.js",
+    "index.html": "/coursero/index.html",
+    "main.f855e6bc.css.map": "/coursero/static/css/main.f855e6bc.css.map",
+    "main.42848ff2.js.map": "/coursero/static/js/main.42848ff2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.42848ff2.js"
+  ]
+}
