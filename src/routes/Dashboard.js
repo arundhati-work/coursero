@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import DashboardCourse from "../components/DashboardCourse/DashboardCourse";
+import Footer from "../components/Footer/Footer";
 
 export default function Dashboard() {
   const courseModel = {
@@ -35,8 +36,9 @@ export default function Dashboard() {
         name: "Alice Johnson",
         email: "alice@example.com",
         dueDate: "13 Jan",
-        progress: 13,
-        liked: true
+        progress: 75,
+        liked: true,
+        complete: false
       },
       {
         id: 102,
@@ -44,7 +46,8 @@ export default function Dashboard() {
         email: "bob@example.com",
         dueDate: "16 Jan",
         progress: 24,
-        liked: false
+        liked: false,
+        complete: false
       },
       // Additional enrolled students...
     ],
@@ -56,6 +59,11 @@ export default function Dashboard() {
       <p>Hi Natasha!</p>
       <h1>Continue Learning</h1>
       <DashboardCourse details={courseModel}/>
+      <DashboardCourse details={courseModel}/>
+      <h1>Completed Courses</h1>
+      <DashboardCourse details={courseModel}/>
+      <DashboardCourse details={courseModel}/>
+      <Footer/>
     </div>
   );
 }

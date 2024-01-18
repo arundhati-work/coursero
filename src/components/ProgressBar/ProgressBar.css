@@ -1,0 +1,12 @@
+#progressbar-component{
+    height: 0.5rem;
+    width: 70%;
+    background-color: #ABA6A6;
+    border-radius: 10px;
+}
+
+#progressbar-component .complete{
+    height: 0.5rem;
+    background-color: #545151;
+    border-radius: 10px;
+}

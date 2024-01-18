@@ -6,7 +6,12 @@
     padding: 1rem;
     display: flex;
     justify-content: space-around;
-    align-items: top;
+    align-items: center;
+}
+
+#dashboard-course-component .thumbnail-div img{
+    width: 70%;
+    height: auto;
 }
 
 
