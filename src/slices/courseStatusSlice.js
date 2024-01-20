@@ -73,8 +73,8 @@ export const courseStatusSlice = createSlice({
         course.id === action.payload.id
           ? {
               ...course,
-              complete: action.payload.complete,
-              progress: action.payload.progress,
+              complete: true,
+              progress: 100
             }
           : course
       );

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './DashboardCourse.css';
 import liked from '../../assets/heart-filled.png';
 import unliked from '../../assets/heart-empty.png';
@@ -6,8 +6,7 @@ import complete from '../../assets/complete.png';
 import incomplete from '../../assets/incomplete.png';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import { useSelector, useDispatch } from "react-redux";
-import {fetchData, toggleLikeAction} from '../../slices/actions';
-import {  markComplete, toggleLike } from '../../slices/courseStatusSlice';
+import { toggleLikeAction, markCompleteAction} from '../../slices/actions';
 
 export default function DashboardCourse(props) {
     const dispatch = useDispatch();
@@ -18,6 +17,10 @@ export default function DashboardCourse(props) {
         const newLikeState = !course.liked;
         const likes = newLikeState ? course.likes + 1 : course.likes - 1;
         dispatch(toggleLikeAction(course.id, newLikeState, likes));
+    }
+
+    const handleMarkComplete = () => {
+        dispatch(markCompleteAction(course.id));
     }
 
   return (
@@ -33,7 +36,7 @@ export default function DashboardCourse(props) {
             <div className='space-between'>
                 <p className='medium-text'>{course.name}</p>
                 <img src={course.liked? liked: unliked} alt={course.liked? 'dislike':'like'} onClick={toggleLikeCourse}/>
-                <img src={course.complete? complete: incomplete} alt={course.complete? 'Mark as Complete':'Course Complete'} />
+                <img src={course.complete? complete: incomplete} alt={course.complete? 'Mark as Complete':'Course Complete'}  onClick={handleMarkComplete}/>
             </div>
             <div className='space-between'>
                 <ProgressBar progress={course.progress}/>

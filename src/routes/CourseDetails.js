@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header/Header";
 import location from "../assets/location.png";
-import { fetchData, toggleEnrollAction } from "../slices/actions";
+import { toggleEnrollAction } from "../slices/actions";
 import { useSelector, useDispatch } from "react-redux";
 import Footer from "../components/Footer/Footer";
 import "../styles/CourseDetails.css";
@@ -12,10 +12,6 @@ export default function CourseDetails() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const { courses } = useSelector((state) => state.course);
-
-  useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch]);
 
   const course = courses.find((c) => c.id === id) || {};
 
