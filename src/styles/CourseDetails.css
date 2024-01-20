@@ -1,0 +1,24 @@
+#course-details-component .black-box{
+    background-color: #4D4D4D;
+    color: #FFF;
+}
+
+#course-details-component .thumbnail img{
+    border: 5px solid #FFF;
+}
+
+#course-details-component .title{
+    display: flex;
+}
+
+#course-details-component .course-name{
+    font-size: 3rem;
+}
+
+#course-details-component .instructor{
+    font-size: 1.5rem;
+}
+
+#course-details-component .syllabus-open{
+    border: 3px solid black;
+}

@@ -6,7 +6,7 @@ export default function ProgressBar(props) {
   const percent = progress + "%";
   return (
     <div id="progressbar-component">
-      <div className="complete" style={{ width: `${percent}` }}></div>
+      <div className="complete" style={{ width: `${percent}`}} ></div>
     </div>
   );
 }
