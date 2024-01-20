@@ -1,0 +1,164 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "name": "Introduction to React Native",
+      "instructor": "Tom Doe",
+      "description": "Learn the basics of React Native development and build your first mobile app.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://picsum.photos/200",
+      "duration": "8 weeks",
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "likes": 17,
+      "enrolled": true,
+      "dueDate": "13 Jan",
+      "progress": 75,
+      "liked": false,
+      "complete": false,
+      "prerequisites": [
+        "Basic JavaScript knowledge"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to React native",
+          "content": "Overview of React, setting up your development environment."
+        },
+        {
+          "week": 2,
+          "topic": "Building Your First App",
+          "content": "Creating a simple react app using React components."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Introduction to React",
+      "instructor": "Tom Doe",
+      "description": "Learn the basics of React Native development and build your first mobile app.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://picsum.photos/200",
+      "duration": "8 weeks",
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "likes": -8536,
+      "enrolled": true,
+      "dueDate": "13 Jan",
+      "progress": 75,
+      "liked": false,
+      "complete": false,
+      "prerequisites": [
+        "Basic JavaScript knowledge"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to React",
+          "content": "Overview of React, setting up your development environment."
+        },
+        {
+          "week": 2,
+          "topic": "Building Your First App",
+          "content": "Creating a simple react app using React components."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Introduction to Java",
+      "instructor": "Jane Doe",
+      "description": "Learn the basics of Java.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://picsum.photos/200",
+      "duration": "8 weeks",
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "likes": -8548,
+      "enrolled": true,
+      "dueDate": "13 Jan",
+      "progress": 75,
+      "liked": false,
+      "complete": false,
+      "prerequisites": [
+        "None"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Java",
+          "content": "Learn Object Oriented Programming"
+        },
+        {
+          "week": 2,
+          "topic": "Practice Problems",
+          "content": "Solve some practice problems with Java."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Introduction to Python",
+      "instructor": "Jane Doe",
+      "description": "Learn the basics of Python.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://picsum.photos/200",
+      "duration": "8 weeks",
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "likes": 10,
+      "enrolled": false,
+      "dueDate": "13 Jan",
+      "progress": 75,
+      "liked": false,
+      "complete": false,
+      "prerequisites": [
+        "None"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Python",
+          "content": "Learn Python basics"
+        },
+        {
+          "week": 2,
+          "topic": "Practice Problems",
+          "content": "Solve some practice problems with Python."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Introduction to Javascript",
+      "instructor": "Pop Eye",
+      "description": "Learn the basics of Javascript.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://picsum.photos/200",
+      "duration": "8 weeks",
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "likes": 10,
+      "enrolled": false,
+      "dueDate": "13 Jan",
+      "progress": 75,
+      "liked": false,
+      "complete": false,
+      "prerequisites": [
+        "None"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Javascript",
+          "content": "Learn Javascript basics"
+        },
+        {
+          "week": 2,
+          "topic": "Practice Problems",
+          "content": "Solve some practice problems with Javascript."
+        }
+      ]
+    }
+  ]
+}
