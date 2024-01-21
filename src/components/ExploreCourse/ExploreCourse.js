@@ -12,7 +12,7 @@ export default function ExploreCourse(props) {
 
   return (
     
-    <div id="explore-course-component">
+    <div id="explore-course-component"  className='course-block'>
         <div className='thumbnail-div'>
             <img src={thumbnail} alt={courseName}/>
         </div>
@@ -23,7 +23,7 @@ export default function ExploreCourse(props) {
             </div>
             <div>
                 <img src={liked} alt='likes' />
-                <p className='small-text'>{likes}</p>
+                <p className='likes-text'>{likes}</p>
             </div>
         </div>
     </div>

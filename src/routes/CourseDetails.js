@@ -6,6 +6,8 @@ import { toggleEnrollAction } from "../slices/actions";
 import { useSelector, useDispatch } from "react-redux";
 import Footer from "../components/Footer/Footer";
 import "../styles/CourseDetails.css";
+import heart from "../assets/heart-filled.png";
+import arrow from "../assets/arrow-down.png";
 
 export default function CourseDetails() {
   const [toggleSyllabus, setToggleSyllabus] = useState(false);
@@ -25,41 +27,48 @@ export default function CourseDetails() {
       <Header comp="courseDetails" />
       <div>
         <div className="black-box">
-          <div className="title">
-            <div className="thumbnail">
-              <img src={course.thumbnail} alt={course.name} />
+          <div className="content">
+            <div className="title">
+              <div className="thumbnail">
+                <img src={course.thumbnail} alt={course.name} />
+              </div>
+              <div className="name-instructor">
+                <p className="course-name">{course.name}</p>
+                <p className="instructor">Prof. {course.instructor}</p>
+              </div>
             </div>
-            <div className="name-instructor">
-              <p className="course-name">{course.name}</p>
-              <p className="instructor">Prof. {course.instructor}</p>
+            <div className="black-box-more-details">
+              <div className="blackbox-details">
+                <img src={location} alt="location" /> <b>Online</b>
+              </div>
+              <div className="blackbox-details">
+                Enrollment Status: <b>{course.enrollmentStatus}</b>
+              </div>
+              <div className="blackbox-details">
+                Duration: <b>{course.duration}</b>
+              </div>
+              <div className="blackbox-details">
+                Schedule: <b>{course.schedule}</b>
+              </div>
             </div>
-          </div>
-          <div className="black-box-more-details">
-            <span>
-              <img src={location} alt="location" /> <b>Online</b>
-            </span>
-            <span>
-              Enrollment Status: <b>{course.enrollmentStatus}</b>
-            </span>
-            <span>
-              Duration: <b>{course.duration}</b>
-            </span>
-            <span>
-              Schedule: <b>{course.schedule}</b>
-            </span>
-          </div>
-          <div className="active-section">
-            <button onClick={handleToggleEnroll}>{course.enrolled? 'UNENROLL': 'ENROLL'}</button>
+            <div className="active-section">
+              <button onClick={handleToggleEnroll}>
+                {course.enrolled ? "UNENROLL" : "ENROLL"}
+              </button>
+              <div className="likes-section">
+                <img src={heart} alt="likes" />
+                <p>{course.likes}</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="descriptions">
-          <div className="course-description">
-            <h1>Course Description</h1>
+        <div className="descriptions content">
+          <div className="descrip course-description">
+            <p className="headings">Course Description</p>
             <p>{course.description}</p>
           </div>
-          <div className="course-prereqs">
-            <h1>Pre-requisites</h1>
+          <div className="descrip course-prereqs">
+            <p className="headings">Pre-requisites</p>
             {course.prerequisites ? (
               <ol>
                 {course.prerequisites.map((prereq, i) => (
@@ -71,28 +80,28 @@ export default function CourseDetails() {
             )}
           </div>
         </div>
-        <div className="syllabus-open" onClick={()=>setToggleSyllabus(!toggleSyllabus)}>
-          <h1>Syllabus &#11022;</h1>
+        <div
+          className="descrip syllabus-open content"
+          onClick={() => setToggleSyllabus(!toggleSyllabus)}
+        >
+          <p className="headings">Syllabus <img src={arrow} alt="syllabus"/></p>
         </div>
-        <div className="syllabus-content">
-          {
-            course.syllabus && toggleSyllabus? (
-              <div>
-                {
-                  course.syllabus.map((data) => {
-                    return (
-                      <div key={data.week}>
-                        <p>Week {data.week}</p>
-                        <p>{data.topic}</p>
-                        <p>{data.content}</p>
-                      </div>
-                    )
-                  })
-                }
-              </div>
-            ): (
-              <div></div>
-            )}
+        <div className="syllabus-content-div content">
+          {course.syllabus && toggleSyllabus ? (
+            <div>
+              {course.syllabus.map((data) => {
+                return (
+                  <div key={data.week}>
+                    <p className="syllabus-week">Week {data.week}</p>
+                    <p className="syllabus-topic">{data.topic}</p>
+                    <p className="syllabus-content">{data.content}</p>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
       <Footer />

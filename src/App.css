@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headings{
+  color: #071733;
+  font-size: 2rem;
+  margin-left: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.course-block{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #3b3b3d;
+  margin-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.course-block a{
+  color: #3b3b3d;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.course-block a:hover{
+  text-decoration: underline;
+}
+
+#search-box{
+  display: block;
+  width: 70%;
+  margin: 3rem auto;
+  padding: 12px 30px;
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 600px){
+
+  .headings{
+    font-size: 3rem;
+    margin-left: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .main-container{
+    width: 70%;
+    margin: auto;
   }
 }
