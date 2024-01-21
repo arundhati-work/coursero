@@ -1,6 +1,7 @@
 # Coursero App
 
 The design files for this web app can be found [here](https://www.figma.com/file/t1lMCaZfe2STZvK9xfvs6o/Alemeno?type=design&node-id=0%3A1&mode=design&t=snCJeFMiSpBttbb6-1).
+A demo video of the project can be found [here](https://youtu.be/zEJ-_eQR0NA).
 
 ## Introduction
 
@@ -44,3 +45,4 @@ Welcome to the Course Management System - Coursero! This application is built us
 * To start the dummy server, run the command: 'json-server --watch src/assets/db.json --port 3031'
 * Open another terminal parallely and switch to the coursero directory with 'cd coursero'
 * Run the command 'npm start'
+* The application should start on ‘localhost:3000/coursero’ by default. If it doesn’t start automatically, paste the above url in a browser (preferably chrome)
