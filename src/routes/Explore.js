@@ -33,8 +33,9 @@ export default function Explore() {
   return (
     <div>
       <Header comp='explore' />
-      <h1>Explore Courses</h1>
-      <input
+      <div className="main-container">
+      <p className='headings'>Explore Courses</p>
+      <input id="search-box"
         type='text'
         placeholder='Search courses by course name or instructor...'
         value={text}
@@ -43,6 +44,7 @@ export default function Explore() {
       {filteredCourses.map((course) => (
         <ExploreCourse key={course.id} details={course} />
       ))}
+      </div>
       <Footer />
     </div>
   );

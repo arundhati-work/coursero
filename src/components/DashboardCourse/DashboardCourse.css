@@ -1,13 +1,14 @@
 
-
-#dashboard-course-component{
-    border: 2px solid black;
-    margin: 1rem;
-    padding: 1rem;
+#dashboard-course-component .details-div {
+    width: 70%;
+    padding: 0 1rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+  }
+
+
 
 #dashboard-course-component .thumbnail-div img{
     width: 70%;
@@ -17,14 +18,32 @@
 
 #dashboard-course-component .small-text p{
     font-size: 0.7;
+    margin: 10px 0;
 }
 
 #dashboard-course-component .medium-text{
     font-size: 1.2rem;
+    margin: 0;
 }
 
 #dashboard-course-component .space-between{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#dashboard-course-component .reactive{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+#dashboard-course-component a{
+    color: #3b3b3d;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#dashboard-course-component a:hover{
+    text-decoration: underline;
 }

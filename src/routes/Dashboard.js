@@ -24,10 +24,10 @@ export default function Dashboard() {
 
 
     return (
-      <div>
+      <div id="dashboard-route">
         <Header comp="dashboard" />
-        <p>Hi Natasha!</p>
-        <h1>Continue Learning</h1>
+        <div className="main-container">
+        <p className="headings">Continue Learning</p>
         {courses.length? (
           courses.map((course) => {
             return (course.enrolled)? <DashboardCourse key={course.id} id={course.id} /> : null
@@ -36,6 +36,7 @@ export default function Dashboard() {
         ) : (
           <div>No courses available</div>
         )}
+        </div>
         <Footer />
       </div>
     );

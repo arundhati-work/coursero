@@ -1,24 +1,114 @@
 #course-details-component .black-box{
-    background-color: #4D4D4D;
+    background-color: #08204b;
     color: #FFF;
+    padding: 5rem 0;
+}
+
+#course-details-component .content{
+    margin: 0 2rem;
+}
+
+
+
+#course-details-component .likes-section p{
+    margin: 5px 0;
 }
 
 #course-details-component .thumbnail img{
     border: 5px solid #FFF;
+    width: 80%;
 }
 
 #course-details-component .title{
     display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 #course-details-component .course-name{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 #course-details-component .instructor{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 #course-details-component .syllabus-open{
-    border: 3px solid black;
+    border-bottom: 2px solid #071733;
+    padding: 0 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#course-details-component .blackbox-details{
+    margin: 30px 0;
+    font-size: 1.2rem;
+}
+
+#course-details-component .active-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+#course-details-component .active-section button{
+    padding: 0 3rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 3px solid #FFF;
+    color: #FFF;
+    transition: background-color 300ms ease-in;
+}
+
+#course-details-component .active-section button:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+#course-details-component .descriptions{
+    margin-top: 4rem;
+}
+
+#course-details-component .headings{
+    color: #071733;
+    font-size: 2rem;
+}
+
+#course-details-component .descrip{
+    margin-bottom: 3rem;
+}
+
+#course-details-component .syllabus-week{
+    font-size: 0.7rem;
+    color: #3D3D3D;
+    margin: 0;
+}
+
+#course-details-component .syllabus-topic{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+#course-details-component .syllabus-content{
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:600px){
+    #course-details-component .content{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #course-details-component .course-name{
+        font-size: 3rem;
+        margin: 0;
+        margin-bottom: 10px;
+    }
 }

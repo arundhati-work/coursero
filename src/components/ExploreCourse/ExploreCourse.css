@@ -1,22 +1,31 @@
-#explore-course-component{
-    border: 3px solid black;
-    padding: 1rem 2rem;
-    margin: 1rem;
-    display: flex;
-    justify-content: space-evenly;
+#explore-course-component .details-div {
+  width: 70%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#explore-course-component .details-div{
-    display: flex;
-    width: 80%;
-    justify-content: space-evenly;
-    align-items: center;
+#explore-course-component .thumbnail-div img {
+  width: 70%;
+  height: auto;
 }
 
-#explore-course-component .small-text{
-    font-size: 0.7;
+#explore-course-component .small-text {
+  font-size: 0.7;
+  margin: 10px 0;
 }
 
-#explore-course-component .medium-text{
-    font-size: 1.2rem;
+#explore-course-component .likes-text {
+  font-size: 0.7;
+  margin: 0;
+}
+
+#explore-course-component .medium-text {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#explore-course-component a {
+  color: #000;
 }
