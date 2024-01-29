@@ -5,7 +5,7 @@ A demo video of the project can be found [here](https://youtu.be/zEJ-_eQR0NA).
 
 ## Introduction
 
-Welcome to the Course Management System - Coursero! This application is built using HTML, CSS, JavaScript, React, and Redux, along with libraries such as react-router-dom, redux toolkit, axios and JSONServer. The primary goal of this project is to provide a user-friendly interface for managing and displaying information about various courses, including course listings, details, and a student dashboard.
+Welcome to the Course Management System - Coursero! The primary goal of this project is to provide a user-friendly interface for managing and displaying information about various courses, including course listings, details, and a student dashboard. This application is built using HTML, CSS, JavaScript, React, and Redux, along with libraries such as react-router-dom, redux toolkit, axios and JSONServer. 
 
 ## Features
 
